@@ -1,0 +1,17 @@
+{
+  "name": "kcrm-product-issue",
+  "version": "1.0.0",
+  "description": "KCRM product issue webhook listner",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon",
+    "prod": "pm2 start src/app.js -i 1 --no-autorestart --kill-timeout 120000 --name"
+  },
+  "author": "iserioton",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
